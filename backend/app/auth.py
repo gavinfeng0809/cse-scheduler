@@ -3,7 +3,7 @@
 - 令牌：HS256 JWT，24 小时有效，载荷含用户 id/用户名/角色；
 - 密码：bcrypt 加盐哈希（直接用 bcrypt 库，避免 passlib 与 bcrypt 4.x 的版本探测噪音）；
 - 种子账号：由 init_data 创建（users 空表时建 admin，初始密码取
-  环境变量 ADMIN_INITIAL_PASSWORD，必须显式提供）。
+  环境变量 ADMIN_INITIAL_PASSWORD，默认 "CHANGE_ME_IN_ENV"）。
 """
 from datetime import datetime, timedelta, timezone
 import uuid

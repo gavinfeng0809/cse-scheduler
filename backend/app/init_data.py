@@ -32,7 +32,7 @@ def _seed_admin(db):
 
     username = "admin"
     # 初始密码必须由环境变量提供（.env 的 ADMIN_INITIAL_PASSWORD）；
-    # 不再提供可猜测的默认值，避免部署后忘记修改。
+    # 不在代码中保留可猜测的默认值，避免部署后忘记修改。
     password = os.environ.get("ADMIN_INITIAL_PASSWORD")
 
     if not password:
