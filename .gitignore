@@ -1,0 +1,47 @@
+# ---------- 环境与密钥（绝不入库） ----------
+.env
+.env.*
+!.env.example
+
+# ---------- 运行时数据 ----------
+data/exports/*
+data/uploads/*
+!data/exports/.gitkeep
+!data/uploads/.gitkeep
+backups/
+*.sql
+*.sql.gz
+*.dump
+*.log
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- Node / 前端 ----------
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- 编辑器 / 系统 ----------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---------- 临时文件 ----------
+*.tmp
+*.bak
+*.orig
