@@ -124,7 +124,7 @@ docker compose exec api alembic upgrade head
 docker compose exec api python -m app.init_data
 ```
 
-`init_data` 会创建：团队、7 个班次（O1/O2/O3/D/N/C/Y）、默认管理员账号（`admin`，密码取 `ADMIN_INITIAL_PASSWORD`，未设置则为内置默认值——**首次登录后请立即修改**）。
+`init_data` 会创建：团队、7 个班次（O1/O2/O3/D/N/C/Y）、管理员账号（`admin`，密码取 `.env` 的 `ADMIN_INITIAL_PASSWORD`；**未设置会直接报错**，避免部署后忘记改密码）。
 
 ### 5. 访问
 
