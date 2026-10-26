@@ -326,3 +326,4 @@ docker compose build api worker && docker compose up -d api worker
 
 - 仓库内所有示例数据均为脱敏后的通用描述，不含任何真实人员信息与生产环境密钥。
 - 部署前请务必修改 `.env` 中的密码与 `JWT_SECRET`，并在首次登录后修改管理员密码。
+<!-- sync test 1793001004 -->
